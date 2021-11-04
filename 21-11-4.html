@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#div1{
+				position: absolute;
+				right: 3px;
+				bottom: 0px;
+				width: 200px;
+				height: 150px;
+				border: 1px solid #aaffff;
+				background: #ffff7f;
+				display: none;
+			}
+		</style>
+		<script type="text/javascript"src="./js/jquery-3.4.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$('#div1').slideDown(2000,function(){
+					setTimeout(function(){
+						$('#div1').slideUp(2000);
+					},3000)
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<div id="">
+			测试
+		</div>
+		<div id="div1"><img src="./img/36.png" ><button type="button">测试</button></div>
+	</body>
+</html>
